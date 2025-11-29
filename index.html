@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marshmallow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-box">
+            <h1>Welcome to Marshmallow's World</h1>
+            <p>Hello my love, this website is just for me and you.</p>
+        </div>
+        <button id="memories-btn" onclick="showMemories()">&hearts; Access Our Memories</button>
+    </header>
+
+    <section id="messages">
+        <h2>Messages</h2>
+        <div id="message-container"></div>
+
+        <div class="input-group">
+            <input type="text" id="my-message" placeholder="Type your message...">
+            <button onclick="addMyMessage()">Send (Mahlatse)</button>
+        </div>
+
+        <div class="input-group">
+            <input type="text" id="her-message" placeholder="Type her response...">
+            <button onclick="addHerMessage()">Send (Ntebaleng)</button>
+        </div>
+    </section>
+
+    <section id="memories-section" class="hidden">
+        <h2>Our Memories</h2>
+        <div id="memories-container"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+    

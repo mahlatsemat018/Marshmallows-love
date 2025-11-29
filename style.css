@@ -1,0 +1,153 @@
+/* Full-screen website */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    overflow: hidden; /* fixed website */
+
+    /* Background image fills screen */
+    background-size: cover;      /* fills whole screen */
+    background-position: center; /* centers image */
+    background-repeat: no-repeat;
+    transition: background-image 2s ease-in-out; /* smooth fade */
+    background-color: rgba(0,0,0,0.5); /* dim layer for brightness */
+}
+
+
+
+/* Header box */
+.header-box {
+    display: inline-block;
+    background-color: rgba(255, 182, 193, 0.8);
+    padding: 5px 20px;
+    border-radius: 15px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    max-width: 90%;
+    margin-right: 150px;
+}
+
+/* Oval Memories button */
+#memories-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: red;
+    color: #fff;
+    border: none;
+    padding: 15px 20px;
+    font-size: 16px;
+    border-radius: 50% 50% 50% 50%;
+    cursor: pointer;
+    transform: rotate(-45deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+}
+
+#memories-btn:hover {
+    background-color: darkred;
+}
+
+/* Messages section */
+#messages {
+    margin-top: 20px; /* leave space for header */
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Fixed message container */
+#message-container {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 700px;
+    height: 400px;
+    overflow-y: auto;
+    background-color: rgba(255, 182, 193, 0.3);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Input boxes */
+.input-group {
+    margin: 10px auto;
+}
+
+input {
+    padding: 5px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Buttons */
+button {
+    padding: 5px 10px;
+    margin: 5px;
+    background-color: #1E90FF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0b63d1;
+}
+
+/* Messages styling */
+.message-mahlatse {
+    background-color: rgba(30, 144, 255, 0.8); /* blue */
+    padding: 8px 12px;
+    border-radius: 15px;
+    max-width: 60%;
+    word-wrap: break-word;
+    align-self: flex-start;
+    text-align: left;
+}
+
+.message-ntebaleng {
+    background-color: rgba(148, 0, 211, 0.7); /* purple */
+    padding: 8px 12px;
+    border-radius: 15px;
+    max-width: 60%;
+    word-wrap: break-word;
+    align-self: flex-end;
+    text-align: left;
+}
+
+/* Memories section */
+#memories-section {
+    display: none;
+    margin-top: 30px;
+}
+
+#memories-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+#memories-container img, #memories-container video {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
